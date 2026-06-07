@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Academy - Learn from Basics to Advanced</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📊 Data Analytics Academy</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#intermediate">Intermediate</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#simulations">Simulations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master Data Analytics</h1>
+            <p>From Basics to Advanced - With Interactive Simulations</p>
+            <button class="btn-primary" onclick="scrollToSection('basics')">Start Learning Now</button>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="learning-path">
+        <div class="container">
+            <h2>Your Learning Journey</h2>
+            <div class="path-steps">
+                <div class="step active" data-level="1">
+                    <div class="step-number">1</div>
+                    <h3>Basics</h3>
+                    <p>Introduction to data, statistics, and tools</p>
+                </div>
+                <div class="step" data-level="2">
+                    <div class="step-number">2</div>
+                    <h3>Intermediate</h3>
+                    <p>Data cleaning, visualization, and analysis</p>
+                </div>
+                <div class="step" data-level="3">
+                    <div class="step-number">3</div>
+                    <h3>Advanced</h3>
+                    <p>Machine learning, predictive analytics, and Big Data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basics Section -->
+    <section id="basics" class="section basics-section">
+        <div class="container">
+            <h2>📚 Basics of Data Analytics</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon">🔢</div>
+                    <h3>What is Data?</h3>
+                    <p>Learn about types of data: categorical, numerical, qualitative, and quantitative</p>
+                    <button class="btn-lesson" onclick="openLesson('data-types')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">📈</div>
+                    <h3>Basic Statistics</h3>
+                    <p>Understanding mean, median, mode, variance, and standard deviation</p>
+                    <button class="btn-lesson" onclick="openLesson('basic-stats')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">💻</div>
+                    <h3>Tools Introduction</h3>
+                    <p>Overview of Excel, SQL, Python, and R for data analytics</p>
+                    <button class="btn-lesson" onclick="openLesson('tools')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">🎯</div>
+                    <h3>Data Types & Structures</h3>
+                    <p>Databases, tables, rows, columns, and data formats</p>
+                    <button class="btn-lesson" onclick="openLesson('data-structures')">Start Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intermediate Section -->
+    <section id="intermediate" class="section intermediate-section">
+        <div class="container">
+            <h2>🚀 Intermediate Data Analytics</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon">🧹</div>
+                    <h3>Data Cleaning</h3>
+                    <p>Handling missing values, outliers, and data validation</p>
+                    <button class="btn-lesson" onclick="openLesson('data-cleaning')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">📊</div>
+                    <h3>Data Visualization</h3>
+                    <p>Creating charts, graphs, and dashboards effectively</p>
+                    <button class="btn-lesson" onclick="openLesson('visualization')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">❓</div>
+                    <h3>SQL Queries</h3>
+                    <p>SELECT, JOIN, GROUP BY, and advanced querying</p>
+                    <button class="btn-lesson" onclick="openLesson('sql')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">🔍</div>
+                    <h3>Exploratory Analysis</h3>
+                    <p>Finding patterns, trends, and insights in data</p>
+                    <button class="btn-lesson" onclick="openLesson('exploratory')">Start Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Section -->
+    <section id="advanced" class="section advanced-section">
+        <div class="container">
+            <h2>🎓 Advanced Data Analytics</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Regression, classification, clustering, and neural networks</p>
+                    <button class="btn-lesson" onclick="openLesson('ml')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">📉</div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Forecasting, time series analysis, and prediction models</p>
+                    <button class="btn-lesson" onclick="openLesson('predictive')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">🌐</div>
+                    <h3>Big Data Technologies</h3>
+                    <p>Hadoop, Spark, and distributed computing</p>
+                    <button class="btn-lesson" onclick="openLesson('bigdata')">Start Lesson</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">📊</div>
+                    <h3>Advanced Dashboarding</h3>
+                    <p>Tableau, Power BI, and interactive dashboards</p>
+                    <button class="btn-lesson" onclick="openLesson('dashboard')">Start Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Simulations -->
+    <section id="simulations" class="section simulations-section">
+        <div class="container">
+            <h2>🎮 Interactive Simulations</h2>
+            <p class="section-subtitle">Learn by doing - hands-on experiments!</p>
+            
+            <div class="simulations-grid">
+                <div class="simulation-card">
+                    <div class="sim-icon">📊</div>
+                    <h3>Mean/Median/Mode Simulator</h3>
+                    <p>Input data and see how averages change interactively</p>
+                    <div class="sim-demo">
+                        <input type="number" id="data-input" placeholder="Enter numbers (e.g., 5, 10, 15)" />
+                        <button onclick="calculateStatistics()">Calculate</button>
+                        <div id="stats-result" class="result-box"></div>
+                    </div>
+                </div>
+
+                <div class="simulation-card">
+                    <div class="sim-icon">📈</div>
+                    <h3>Chart Builder</h3>
+                    <p>Create different chart types from your data</p>
+                    <div class="sim-demo">
+                        <select id="chart-type">
+                            <option value="bar">Bar Chart</option>
+                            <option value="line">Line Chart</option>
+                            <option value="pie">Pie Chart</option>
+                        </select>
+                        <input type="text" id="chart-data" placeholder="Data: 10,20,30,40" />
+                        <button onclick="createChart()">Build Chart</button>
+                        <div id="chart-output" class="chart-box"></div>
+                    </div>
+                </div>
+
+                <div class="simulation-card">
+                    <div class="sim-icon">🎲</div>
+                    <h3>Probability Simulator</h3>
+                    <p>Roll dice, draw cards, understand probability distributions</p>
+                    <div class="sim-demo">
+                        <button onclick="rollDice()">Roll Dice</button>
+                        <button onclick="drawCard()">Draw Card</button>
+                        <div id="probability-result" class="result-box"></div>
+                    </div>
+                </div>
+
+                <div class="simulation-card">
+                    <div class="sim-icon">🔍</div>
+                    <h3>Data Cleaning Game</h3>
+                    <p>Find and fix errors in dirty datasets</p>
+                    <div class="sim-demo">
+                        <div id="dirty-data" class="data-display"></div>
+                        <button onclick="startCleaningGame()">Start Game</button>
+                        <div id="cleaning-result" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section quiz-section">
+        <div class="container">
+            <h2>🧠 Test Your Knowledge</h2>
+            <div class="quiz-container">
+                <div id="quiz-question" class="quiz-question"></div>
+                <div id="quiz-options" class="quiz-options"></div>
+                <div id="quiz-result" class="quiz-result"></div>
+                <button id="next-quiz" class="btn-primary" onclick="nextQuiz()" style="display: none;">Next Question</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section class="section progress-section">
+        <div class="container">
+            <h2>📈 Your Progress</h2>
+            <div class="progress-tracker">
+                <div class="progress-item">
+                    <span>Basics Completed:</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-basics" style="width: 0%"></div>
+                    </div>
+                    <span id="percentage-basics">0%</span>
+                </div>
+                <div class="progress-item">
+                    <span>Intermediate Completed:</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-intermediate" style="width: 0%"></div>
+                    </div>
+                    <span id="percentage-intermediate">0%</span>
+                </div>
+                <div class="progress-item">
+                    <span>Advanced Completed:</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-advanced" style="width: 0%"></div>
+                    </div>
+                    <span id="percentage-advanced">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>📧 Get in Touch</h2>
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Data Analytics Academy</h3>
+                    <p>Learn data analytics from basics to advanced with interactive simulations</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#basics">Basics</a></li>
+                        <li><a href="#intermediate">Intermediate</a></li>
+                        <li><a href="#advanced">Advanced</a></li>
+                        <li><a href="#simulations">Simulations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li>Statistics</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Visualization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Data Analytics Academy. Built for learning!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lesson Modal -->
+    <div id="lesson-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Lesson Title</h2>
+                <button class="close-modal" onclick="closeLesson()">×</button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Lesson content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="completeLesson()">Complete Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+          </html> 
